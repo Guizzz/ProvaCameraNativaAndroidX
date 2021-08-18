@@ -207,8 +207,8 @@ public class CameraDialog extends DialogFragment {
 //		mUSBMonitor.dumpDevices();
 		final List<DeviceFilter> filter = DeviceFilter.getDeviceFilters(getActivity(), R.xml.device_filter);
 		mDeviceListAdapter = new DeviceListAdapter(getActivity(), mUSBMonitor.getDeviceList(filter.get(0)));
-		Log.v(TAG,"Ciao");
-		Log.v(TAG,mDeviceListAdapter.getItem(0).getDeviceName());
+		//Log.v(TAG,"Ciao");
+		//Log.v(TAG,mDeviceListAdapter.getItem(0).getDeviceName());
 		//mSpinner.setAdapter(mDeviceListAdapter);
 	}
 
@@ -219,7 +219,7 @@ public class CameraDialog extends DialogFragment {
 
 		mDeviceListAdapter = new DeviceListAdapter(getActivity(), mUSBMonitor.getDeviceList(filter.get(0)));
 
-		Log.v(TAG,"Ciao");
+		Log.v(TAG,"Camera List");
 
 
 		this.dismiss();
@@ -230,6 +230,7 @@ public class CameraDialog extends DialogFragment {
 			Log.v(TAG,mDeviceListAdapter.getItem(i).getManufacturerName());
 			if(mDeviceListAdapter.getItem(i).getManufacturerName().contains("Sonix"))
 			{
+				Log.v(TAG,"Camera Selected");
 				return mDeviceListAdapter.getItem(i);
 			}
 			//Log.v(TAG,mDeviceListAdapter.getItem(i).getSerialNumber());

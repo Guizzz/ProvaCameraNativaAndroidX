@@ -4,9 +4,13 @@ com/serenegiant/common/BaseService.java
  com.serenegiant.common.BaseService
 com/serenegiant/usb/IButtonCallback.java
  com.serenegiant.usb.IButtonCallback
-com/serenegiant/usb/Size.java
- com.serenegiant.usb.Size
- com.serenegiant.usb.Size$1
+com/serenegiant/usb/CameraDialog.java
+ com.serenegiant.usb.CameraDialog
+ com.serenegiant.usb.CameraDialog$1
+ com.serenegiant.usb.CameraDialog$2
+ com.serenegiant.usb.CameraDialog$3
+ com.serenegiant.usb.CameraDialog$CameraDialogParent
+ com.serenegiant.usb.CameraDialog$DeviceListAdapter
 com/serenegiant/usb/IStatusCallback.java
  com.serenegiant.usb.IStatusCallback
 com/serenegiant/usb/USBVendorId.java
@@ -37,10 +41,6 @@ com/serenegiant/usb/IFrameCallback.java
  com.serenegiant.usb.IFrameCallback
 com/serenegiant/uvccamera/BuildConfig.java
  com.serenegiant.uvccamera.BuildConfig
-com/serenegiant/usb/CameraDialog.java
- com.serenegiant.usb.CameraDialog
- com.serenegiant.usb.CameraDialog$1
- com.serenegiant.usb.CameraDialog$2
- com.serenegiant.usb.CameraDialog$3
- com.serenegiant.usb.CameraDialog$CameraDialogParent
- com.serenegiant.usb.CameraDialog$DeviceListAdapter
+com/serenegiant/usb/Size.java
+ com.serenegiant.usb.Size
+ com.serenegiant.usb.Size$1

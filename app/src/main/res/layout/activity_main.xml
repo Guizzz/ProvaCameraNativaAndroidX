@@ -40,6 +40,15 @@
         android:layout_alignTop="@id/camera_view"
         android:text="ToggleButton" />-->
 
+    <ImageView
+        android:id="@+id/frame_camera"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/camera_view"
+        android:layout_marginBottom="6dp"
+        android:src="@drawable/border_cam" />
+
     <ImageButton
         android:id="@+id/capture_button"
         android:layout_width="60dp"
@@ -49,7 +58,8 @@
         android:layout_marginBottom="6dp"
         android:background="@null"
         android:scaleType="centerCrop"
-        android:src="@android:drawable/ic_menu_camera" />
+        android:src="@android:drawable/ic_menu_camera"
+        />
 
     <TextView
         android:id="@+id/alignInfo"
@@ -61,7 +71,7 @@
         android:fontFamily="@font/righteous"
         android:text="Align your document with box above"
         android:textAlignment="center"
-        android:textColor="#FFFFFF"
+        android:textColor="#FF0000"
         android:textSize="50dp" />
 
     <TextView
@@ -74,6 +84,7 @@
         android:fontFamily="@font/righteous"
         android:text="When you are ready press the button to take the pic"
         android:textAlignment="center"
+        android:textColor="#FF0000"
         android:textSize="30dp" />
 
 

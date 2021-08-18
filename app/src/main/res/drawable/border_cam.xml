@@ -21,26 +21,23 @@
   ~  Files in the libjpeg-turbo, libusb, libuvc, rapidjson folder
   ~  may have a different license, see the respective files.
   -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle"
+    android:useLevel="false" >
 
-<resources>
+    <stroke
+        android:width="6px"
+        android:color="@color/GRAY" />
 
-    <!--
-        Base application theme, dependent on API level. This theme is replaced
-        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
-    -->
-    <style name="AppBaseTheme" parent="android:Theme.Light">
-        <!--
-            Theme customizations available in newer API levels can go in
-            res/values-vXX/styles.xml, while customizations related to
-            backward-compatibility can go here.
-        -->
-    </style>
+    <!-- <solid android:color="@color/TRANSPARENT" />　 -->
+    <solid android:color="@null" />
 
-    <!-- Application theme. -->
-    <style name="AppTheme" parent="AppBaseTheme">
-        <item name="windowActionBar">false</item>
-        <item name="windowNoTitle">true</item>
-        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
-    </style>
+    <padding
+        android:bottom="2px"
+        android:left="2px"
+        android:right="2px"
+        android:top="2px" />
 
-</resources>
+    <corners android:radius="20px" />
+
+</shape>

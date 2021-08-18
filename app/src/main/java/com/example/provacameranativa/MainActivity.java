@@ -75,8 +75,25 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
     private ImageButton mCaptureButton;
 
     @Override
+    public void onWindowFocusChanged(boolean hasFocus) {
+        super.onWindowFocusChanged(hasFocus);
+        if (hasFocus) {
+            getWindow().getDecorView().setSystemUiVisibility(
+                    View.SYSTEM_UI_FLAG_LAYOUT_STABLE
+                            | View.SYSTEM_UI_FLAG_LAYOUT_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_HIDE_NAVIGATION
+                            | View.SYSTEM_UI_FLAG_FULLSCREEN
+                            | View.SYSTEM_UI_FLAG_IMMERSIVE_STICKY);
+        }
+    }
+
+    @Override
     protected void onCreate(final Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        //nascondi tasti
+        getWindow().getDecorView().setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION);
+
         if (DEBUG) Log.v(TAG, "onCreate:");
         if (USE_SURFACE_ENCODER)
             setContentView(R.layout.activity_main2);
@@ -95,6 +112,13 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
         mCameraHandler = UVCCameraHandler.createHandler(this, mUVCCameraView,
                 USE_SURFACE_ENCODER ? 0 : 1, PREVIEW_WIDTH, PREVIEW_HEIGHT, PREVIEW_MODE);
 
+        /*Handler handler = new Handler();
+        handler.postDelayed(new Runnable() {
+            public void run() {
+                // yourMethod();
+                finish();
+            }
+        }, 60000);*/
 
     }
 
