@@ -112,13 +112,13 @@ public final class MainActivity extends BaseActivity implements CameraDialog.Cam
         mCameraHandler = UVCCameraHandler.createHandler(this, mUVCCameraView,
                 USE_SURFACE_ENCODER ? 0 : 1, PREVIEW_WIDTH, PREVIEW_HEIGHT, PREVIEW_MODE);
 
-        /*Handler handler = new Handler();
+        Handler handler = new Handler();
         handler.postDelayed(new Runnable() {
             public void run() {
                 // yourMethod();
                 finish();
             }
-        }, 60000);*/
+        }, 60000);
 
     }
 
